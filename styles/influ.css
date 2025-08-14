@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* shared styles*/
+.display-flex{
+    display: flex;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.nav-link{
+    text-decoration: none;
+}
+.cc{
+    margin-right:px;
+   
+}
+.ss{
+    margin-right: 30px;  
+}
+/* color variable */
+.c1{
+color: #3A3A3A;
+}
+.navbar{
+    justify-content: space-between;
+    margin-left: 40px;
+}
+/* section related styles */
+.section-title{
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+.btn-primary{
+    background-color:#E02C6D ;
+    color:#FFFFFF ;
+    width: 196px;
+    height: 44px;
+   border-radius:25px;
+    padding: 10px;
+    border: none;
+}
+.container{
+  
+ display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px; 
+    align-items: center;
+    width:auto;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.image-content{
+    margin-right:auto;
+    margin-top: 10px;
+}
+/* media query related for small device */
+@media (max-width:768px){
+    .container{
+        grid-template-columns: 1fr;
+        gap: 20px;
+        align-items: center;
+    }
+    .image-content{
+        grid-row:1;
+    }
+    .text-content{
+        grid-row: 2;
+    }
+}
+/* logos styles */
+.logo{
+     display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+}
+
+@media (max-width:768px){
+.logo{
+grid-template-columns: repeat(3,1fr);
+gap: 20px;
+}
+}
+/* popular section related styles */
+.popular{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-left: 60px;
+    gap: 20px;
+    padding: 10px;
+    color: #rgba(24, 25, 31, 1);
+}
+.c2{
+    color: orange;
+}
+.see{
+    margin-left: 1800px;
+    color: #E02C6D;
+}
+/* popular er jonno media query */
+@media (max-width:768px){
+.popular{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    
+
+}
+}
