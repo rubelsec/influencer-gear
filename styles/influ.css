@@ -108,9 +108,12 @@ gap: 20px;
 .c2{
     color: orange;
 }
-.see{
-    margin-left: 1800px;
+.see-more{
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
     color: #E02C6D;
+    margin-left:1230px ;
 }
 /* popular er jonno media query */
 @media (max-width:768px){
@@ -121,4 +124,42 @@ gap: 20px;
     
 
 }
+}
+/* future part styles */
+.future{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px; 
+    align-items: center;
+    width:auto;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+/*media query for mobile device */
+@media (max-width:768px){
+    .future{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+
+    }
+    .img-66{
+        grid-row: 2;
+    }
+}
+.foot{
+     color: #FFFFFF;
+    text-align: center;
+    background-color:black;
+}
+.title-l{
+    color: #FFFFFF;
+    text-align: center;
+}
+.des-para{
+    font-size: 14px;
+    padding-bottom: 40px;
 }
